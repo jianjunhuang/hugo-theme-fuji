@@ -21,6 +21,17 @@
             {{ end }}
         </ul>
     </div>
+    <!-- categories -->
+    <div class="sidebar-item sidebar-tags">
+        <h3>{{ i18n "sidebarCategories" }}</h3>
+        <div>
+            {{ range .Site.Taxonomies.categories }}
+            <span>
+                <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+            </span>
+            {{ end }}
+        </div>
+    </div>
     <!-- tags -->
     <div class="sidebar-item sidebar-tags">
         <h3>{{ i18n "sidebarTags" }}</h3>

@@ -7,6 +7,9 @@
 [sidebarTags]
     other = "Tags"
 
+[sidebarCategories]
+    other = "Categories"
+    
 [sidebarLinks]
     other = "Links"
 
@@ -44,6 +47,9 @@
 
 [tagsCurrentTag]
     other = "Posts with the tag {{ .Title }}: "
+
+[categoriesCurrentTag]
+    other = "Posts with the category {{ .Title }}: "
 
 [searchSuccess]
     other = "[NUM] results ([TIME] ms)"
