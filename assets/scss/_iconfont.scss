@@ -14,6 +14,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-category-sharp:before {
+  content: '\e613';
+}
+
 .icon-grid-sharp:before {
   content: '\e612';
 }
