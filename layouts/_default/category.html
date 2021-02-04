@@ -1,10 +1,11 @@
 {{ define "main" }}
-<!-- page info section e.g. current tag & total archive pages -->
-<div class="page-info">
-    <span>{{ i18n "categoriesCurrentTag" . }}</span>
-</div>
 <!-- tags page range in posts with current tag -->
 {{ $paginator := .Paginator }}
+<!-- page info section e.g. current tag & total archive pages -->
+<div class="page-info">
+    <span>{{ i18n "categoriesCurrentTag" . }}{{$paginator.TotalPages}}</span>
+</div>
+
 {{ range $paginator.Pages }}
 <div class="post">
     <h2 class="post-item post-title">
